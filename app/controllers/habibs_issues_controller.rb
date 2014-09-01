@@ -1,6 +1,7 @@
 class HabibsIssuesController < ApplicationController
   before_action :set_habibs_issue, only: [:show, :edit, :update, :destroy]
-
+  has_many :users
+  belongs_to :client
   # GET /habibs_issues
   # GET /habibs_issues.json
   def index
