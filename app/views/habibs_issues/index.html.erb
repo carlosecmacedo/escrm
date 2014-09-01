@@ -1,0 +1,67 @@
+<h1>Listing habibs_issues</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Urgente</th>
+      <th>Nome completo</th>
+      <th>Cpf cnpj</th>
+      <th>Telefone</th>
+      <th>Email</th>
+      <th>Perfil</th>
+      <th>Rede</th>
+      <th>Habibs</th>
+      <th>Ragazzo</th>
+      <th>Hibridas</th>
+      <th>Numero do pedido</th>
+      <th>Segmento</th>
+      <th>Grupo</th>
+      <th>Midia</th>
+      <th>Emissor</th>
+      <th>Atendente</th>
+      <th>Status</th>
+      <th>Reclamacao</th>
+      <th>Resolucao</th>
+      <th>Fechamento</th>
+      <th>Data de resolucao</th>
+      <th>Data de fechamento</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @habibs_issues.each do |habibs_issue| %>
+      <tr>
+        <td><%= habibs_issue.urgente %></td>
+        <td><%= habibs_issue.nome_completo %></td>
+        <td><%= habibs_issue.cpf_cnpj %></td>
+        <td><%= habibs_issue.telefone %></td>
+        <td><%= habibs_issue.email %></td>
+        <td><%= habibs_issue.perfil %></td>
+        <td><%= habibs_issue.rede %></td>
+        <td><%= habibs_issue.habibs %></td>
+        <td><%= habibs_issue.ragazzo %></td>
+        <td><%= habibs_issue.hibridas %></td>
+        <td><%= habibs_issue.numero_do_pedido %></td>
+        <td><%= habibs_issue.segmento %></td>
+        <td><%= habibs_issue.grupo %></td>
+        <td><%= habibs_issue.midia %></td>
+        <td><%= habibs_issue.emissor %></td>
+        <td><%= habibs_issue.atendente %></td>
+        <td><%= habibs_issue.status %></td>
+        <td><%= habibs_issue.reclamacao %></td>
+        <td><%= habibs_issue.resolucao %></td>
+        <td><%= habibs_issue.fechamento %></td>
+        <td><%= habibs_issue.data_de_resolucao %></td>
+        <td><%= habibs_issue.data_de_fechamento %></td>
+        <td><%= link_to 'Show', habibs_issue %></td>
+        <td><%= link_to 'Edit', edit_habibs_issue_path(habibs_issue) %></td>
+        <td><%= link_to 'Destroy', habibs_issue, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Habibs issue', new_habibs_issue_path %>
