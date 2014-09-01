@@ -1,0 +1,105 @@
+<%= form_for(@habibs_issue) do |f| %>
+  <% if @habibs_issue.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@habibs_issue.errors.count, "error") %> prohibited this habibs_issue from being saved:</h2>
+
+      <ul>
+      <% @habibs_issue.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :urgente %><br>
+    <%= f.check_box :urgente %>
+  </div>
+  <div class="field">
+    <%= f.label :nome_completo %><br>
+    <%= f.text_field :nome_completo %>
+  </div>
+  <div class="field">
+    <%= f.label :cpf_cnpj %><br>
+    <%= f.text_field :cpf_cnpj %>
+  </div>
+  <div class="field">
+    <%= f.label :telefone %><br>
+    <%= f.text_field :telefone %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :perfil %><br>
+    <%= f.text_field :perfil %>
+  </div>
+  <div class="field">
+    <%= f.label :rede %><br>
+    <%= f.text_field :rede %>
+  </div>
+  <div class="field">
+    <%= f.label :habibs %><br>
+    <%= f.text_field :habibs %>
+  </div>
+  <div class="field">
+    <%= f.label :ragazzo %><br>
+    <%= f.text_field :ragazzo %>
+  </div>
+  <div class="field">
+    <%= f.label :hibridas %><br>
+    <%= f.text_field :hibridas %>
+  </div>
+  <div class="field">
+    <%= f.label :numero_do_pedido %><br>
+    <%= f.text_field :numero_do_pedido %>
+  </div>
+  <div class="field">
+    <%= f.label :segmento %><br>
+    <%= f.text_field :segmento %>
+  </div>
+  <div class="field">
+    <%= f.label :grupo %><br>
+    <%= f.text_field :grupo %>
+  </div>
+  <div class="field">
+    <%= f.label :midia %><br>
+    <%= f.text_field :midia %>
+  </div>
+  <div class="field">
+    <%= f.label :emissor %><br>
+    <%= f.text_field :emissor %>
+  </div>
+  <div class="field">
+    <%= f.label :atendente %><br>
+    <%= f.text_field :atendente %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br>
+    <%= f.text_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :reclamacao %><br>
+    <%= f.text_area :reclamacao %>
+  </div>
+  <div class="field">
+    <%= f.label :resolucao %><br>
+    <%= f.text_area :resolucao %>
+  </div>
+  <div class="field">
+    <%= f.label :fechamento %><br>
+    <%= f.text_area :fechamento %>
+  </div>
+  <div class="field">
+    <%= f.label :data_de_resolucao %><br>
+    <%= f.datetime_select :data_de_resolucao %>
+  </div>
+  <div class="field">
+    <%= f.label :data_de_fechamento %><br>
+    <%= f.datetime_select :data_de_fechamento %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
