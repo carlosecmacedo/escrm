@@ -21,8 +21,9 @@ one:
   reclamacao: MyText
   resolucao: MyText
   fechamento: MyText
-  data_de_resolucao: 2014-09-01 11:25:21
-  data_de_fechamento: 2014-09-01 11:25:21
+  data_de_resolucao: 2014-09-01 09:44:46
+  data_de_fechamento: 2014-09-01 09:44:46
+
 
 two:
   urgente: false
@@ -45,5 +46,5 @@ two:
   reclamacao: MyText
   resolucao: MyText
   fechamento: MyText
-  data_de_resolucao: 2014-09-01 11:25:21
-  data_de_fechamento: 2014-09-01 11:25:21
+  data_de_resolucao: 2014-09-01 09:44:46
+  data_de_fechamento: 2014-09-01 09:44:46
