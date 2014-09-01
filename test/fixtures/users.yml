@@ -4,10 +4,12 @@ one:
   email: MyString
   senha: MyString
   privilegio: MyString
+  clientes: MyString
   admin: false
 
 two:
   email: MyString
   senha: MyString
   privilegio: MyString
+  clientes: MyString
   admin: false
